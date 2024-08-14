@@ -21,7 +21,12 @@
         </div>
 
         <div class="form__item">
-            {{>field-checkbox action="signupForm.change" label='Ви погоджуєтеся з правилами сервіса'  name='isConfirm'}}
+            {{>field-select action="signupForm.change" label='Роль' name='role' placeholder='Оберіть роль' list=data.role}}
+            <span name="role" class="form__error">Помилка</span>
+        </div>
+
+        <div class="form__item">
+            {{>field-checkbox action="signupForm.change" label='Ви погоджуєтеся з правилами сервіса' name='isConfirm'}}
             <span name="isConfirm" class="form__error">Помилка</span>
         </div>
     </div>
